@@ -1,5 +1,6 @@
 from abc import ABC, ABCMeta
 
+# TODO: Make _initialized private.
 
 class ImmutableMeta(ABCMeta):
     def __call__(cls, *args, **kwargs):

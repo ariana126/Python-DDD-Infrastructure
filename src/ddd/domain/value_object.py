@@ -1,9 +1,10 @@
 from abc import ABC
 from typing import Any
+from ddd.framework.encapsulation import Encapsulated
 from ddd.framework.mutability import Immutable
 
 
-class ValueObject(Immutable, ABC):
+class ValueObject(Encapsulated, Immutable, ABC):
     def equals(self, other: Any) -> bool:
         if not isinstance(other, self.__class__):
             return False
