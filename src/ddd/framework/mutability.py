@@ -1,10 +1,13 @@
-class ImmutableMeta(type):
+from abc import ABC, ABCMeta
+
+
+class ImmutableMeta(ABCMeta):
     def __call__(cls, *args, **kwargs):
         instance = super().__call__(*args, **kwargs)
         instance._initialized = True
         return instance
 
-class Immutable(metaclass=ImmutableMeta):
+class Immutable(ABC, metaclass=ImmutableMeta):
     def __setattr__(self, name, value):
         if hasattr(self, '_initialized'):
             raise AttributeError(f"Cannot modify immutable object")
