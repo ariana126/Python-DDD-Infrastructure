@@ -26,5 +26,7 @@ Clone the repository and install it locally:
 git clone https://github.com/ariana126/Python-DDD-Infrastructure.git
 cd Python-DDD-Infrastructure
 pip install -e .[test]
+```
 
-
+Or set it in your `requirements.txt` as 
+`git+https://github.com/ariana126/Python-DDD-Infrastructure.git@main#egg=ddd`
