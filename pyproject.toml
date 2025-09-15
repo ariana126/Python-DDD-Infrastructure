@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ddd"
+name = "dddx"
 version = "0.1.0"
 description = "Domain-Driven Design base classes and contracts"
 authors = [
@@ -13,7 +13,7 @@ readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.8"
 dependencies = [
-    "underpyx>=0.1.0"
+    "underpyx>=0.1.1"
 ]
 
 [project.optional-dependencies]
