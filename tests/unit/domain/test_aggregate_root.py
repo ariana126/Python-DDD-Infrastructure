@@ -1,7 +1,7 @@
 from assertpy import assert_that
-from ddd.domain.aggregate_root import AggregateRoot
-from ddd.domain.domain_event import DomainEvent
-from ddd.domain.value.identity import Identity
+from ddd.domain import AggregateRoot
+from ddd.domain import DomainEvent
+from ddd.domain.value import Identity
 
 
 class DummyDomainEvent(DomainEvent):

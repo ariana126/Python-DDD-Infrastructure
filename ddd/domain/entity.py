@@ -1,7 +1,7 @@
 from abc import ABC
 from typing import Any
-from ddd.domain.value.identity import Identity
-from ddd.framework.encapsulation import Encapsulated
+from ddd.domain.value import Identity
+from underpy import Encapsulated
 
 
 class Entity(Encapsulated, ABC):

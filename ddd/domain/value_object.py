@@ -1,7 +1,6 @@
 from abc import ABC
 from typing import Any
-from ddd.framework.encapsulation import Encapsulated
-from ddd.framework.mutability import Immutable
+from underpy import Immutable, Encapsulated
 
 
 class ValueObject(Encapsulated, Immutable, ABC):

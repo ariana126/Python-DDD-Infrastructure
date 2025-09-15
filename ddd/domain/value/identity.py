@@ -1,4 +1,4 @@
-from ddd.domain.value_object import ValueObject
+from ddd.domain import ValueObject
 
 
 class Identity(ValueObject):

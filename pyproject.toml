@@ -5,18 +5,20 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "ddd"
 version = "0.1.0"
-description = "Domain-Driven Design Infrastructure Layer"
+description = "Domain-Driven Design base classes and contracts"
 authors = [
   { name = "Ariana Maghsoudi", email = "ariana.maghsoudi82@gmail.com" }
 ]
 readme = "README.md"
-requires-python = ">=3.9"
-
-[tool.setuptools]
-package-dir = { "" = "src" }
-
-[tool.setuptools.packages.find]
-where = ["src"]
+license = { text = "MIT" }
+requires-python = ">=3.8"
+dependencies = [
+    "underpyx>=0.1.0"
+]
 
 [project.optional-dependencies]
-test = ["pytest", "assertpy"]
+dev = ["pytest", "assertpy"]
+
+[tool.setuptools.packages.find]
+include = ["ddd*"]
+exclude = ["tests*"]

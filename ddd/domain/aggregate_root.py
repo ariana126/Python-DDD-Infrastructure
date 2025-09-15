@@ -1,7 +1,7 @@
 from abc import ABC
-from ddd.domain.domain_event import DomainEvent
-from ddd.domain.entity import Entity
-from ddd.domain.value.identity import Identity
+from ddd.domain import DomainEvent
+from ddd.domain import Entity
+from ddd.domain.value import Identity
 
 
 class AggregateRoot(Entity, ABC):

@@ -1,6 +1,6 @@
 from assertpy import assert_that
-from ddd.domain.entity import Entity
-from ddd.domain.value.identity import Identity
+from ddd.domain import Entity
+from ddd.domain.value import Identity
 
 
 class DummyEntity(Entity):

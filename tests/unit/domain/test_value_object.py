@@ -1,7 +1,7 @@
 import pytest
 from assertpy.assertpy import assert_that
+from ddd.domain import ValueObject
 
-from ddd.domain.value_object import ValueObject
 
 class StubValueObject(ValueObject):
     def __init__(self, value: str) -> None:
