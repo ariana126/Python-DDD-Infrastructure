@@ -1,10 +1,13 @@
 from abc import ABC
+
+from underpy import Persistable
+
 from ddd.domain import DomainEvent
 from ddd.domain import Entity
 from ddd.domain.value import Identity
 
 
-class AggregateRoot(Entity, ABC):
+class AggregateRoot(Entity, Persistable, ABC):
     def __init__(self, id_: Identity):
         self.__events: list[DomainEvent] = []
         super().__init__(id_)

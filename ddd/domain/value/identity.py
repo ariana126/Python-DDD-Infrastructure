@@ -9,5 +9,11 @@ class Identity(ValueObject):
     def from_string(cls, id_: str) -> 'Identity':
         return Identity(id_)
 
-    def id(self) -> str:
+    def as_string(self) -> str:
         return self.__id
+
+    def __str__(self):
+        return self.__id
+
+    def __repr__(self):
+        return f"Identity({self.__id})"
