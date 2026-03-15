@@ -1,5 +1,6 @@
 from abc import ABC
 from typing import Any
+
 from underpy import Immutable, Encapsulated
 
 

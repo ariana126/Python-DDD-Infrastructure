@@ -9,5 +9,9 @@ class Identity(ValueObject):
     def from_string(cls, id_: str) -> 'Identity':
         return Identity(id_)
 
-    def id(self) -> str:
+    @property
+    def as_string(self) -> str:
+        return self.__id
+
+    def __str__(self):
         return self.__id

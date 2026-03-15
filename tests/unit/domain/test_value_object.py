@@ -1,6 +1,7 @@
 import pytest
 from assertpy.assertpy import assert_that
-from ddd.domain import ValueObject
+
+from ddd import ValueObject
 
 
 class StubValueObject(ValueObject):
