@@ -1,10 +1,10 @@
 from abc import ABC
 from typing import Any
 
-from underpy import Immutable, Encapsulated
+from underpy import Immutable
 
 
-class ValueObject(Encapsulated, Immutable, ABC):
+class ValueObject(Immutable, ABC):
     def equals(self, other: Any) -> bool:
         if not isinstance(other, self.__class__):
             return False

@@ -1,12 +1,10 @@
 from abc import ABC
 from typing import Any
 
-from underpy import Encapsulated
-
 from .value import Identity
 
 
-class Entity(Encapsulated, ABC):
+class Entity(ABC):
     def __init__(self, id_: Identity):
         self._id = id_
 
