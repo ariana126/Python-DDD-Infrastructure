@@ -1,4 +1,3 @@
-from .command import Command
-from .command_handler import CommandHandler
+from .command import Command, CommandHandler
 
 __all__ = ['Command', 'CommandHandler']
