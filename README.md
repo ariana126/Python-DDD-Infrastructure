@@ -116,6 +116,23 @@ This project is released under the **MIT License**. See the [LICENSE](LICENSE) f
 
 ---
 
+## 🤖 AI Agent Skill
+
+An [agentskills.io](https://agentskills.io)-compatible skill is published alongside this library so AI coding agents (Claude Code, etc.) understand the full API without hallucinating.
+
+Download [`docs/agents/skills/dddx/SKILL.md`](docs/agents/skills/dddx/SKILL.md) and place it in your agent's skills directory:
+
+```bash
+# Claude Code
+mkdir -p ~/.claude/skills/dddx
+curl -o ~/.claude/skills/dddx/SKILL.md \
+  https://raw.githubusercontent.com/ariana126/Python-DDD-Infrastructure/main/docs/agents/skills/dddx/SKILL.md
+```
+
+Once installed, your agent will automatically know how to subclass `ValueObject`, `Entity`, `AggregateRoot`, wire up repositories, use the shipped test doubles, and follow the library's conventions.
+
+---
+
 ## 🤝 Acknowledgments
 
 Thanks to anyone who has contributed or will contribute. Built for folks who want to work cleanly with DDD in Python, without getting locked into large frameworks.
